@@ -23,7 +23,7 @@ class TopicoController(private val service: TopicoService) {
     }
 
     @GetMapping("/{id}")
-    fun buscarPorId(@PathVariable id: Long): Topico {
+    fun buscarPorId(@PathVariable id: Long): TopicoView {
         return service.buscarPorId(id)
     }
 
