@@ -1,12 +1,8 @@
 package br.com.alura.forum.service
 
-import br.com.alura.forum.dto.NovoTopicoDto
-import br.com.alura.forum.model.Curso
-import br.com.alura.forum.model.Topico
 import br.com.alura.forum.model.Usuario
 import org.springframework.stereotype.Service
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 @Service
