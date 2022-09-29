@@ -28,7 +28,6 @@ class TopicoService(
 
         return topicoViewMapper.map(topico)
     }
-
     fun cadastrar(form: NovoTopicoForm) {
         topicos = topicos.plus(topicoFormMapper.map(form))
     }
