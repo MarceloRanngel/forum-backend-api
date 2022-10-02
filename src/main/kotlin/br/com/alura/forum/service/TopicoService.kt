@@ -51,4 +51,12 @@ class TopicoService(
             respostas = topico.respostas
         ))
     }
+
+    fun delete(id: Long) {
+        val topico =  topicos.stream().filter { t ->
+            t.id == id
+        }.findFirst().get()
+
+        topicos = topicos.minus(topico)
+    }
 }
